@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Container Card */
+.container {
+  background: white;
+  padding: 30px;
+  width: 350px;
+  margin: 60px auto;
+  border-radius: 15px;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+h2 {
+  margin-bottom: 20px;
+  color: #ff416c;
+}
+
+/* Inputs */
+input, select {
+  width: 92%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+/* Input Focus Effect */
+input:focus, select:focus {
+  outline: none;
+  border-color: #ff416c;
+  box-shadow: 0 0 5px rgba(255,65,108,0.4);
+}
+
+/* Button */
+button {
+  width: 95%;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button Hover */
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Small Text Links */
+a {
+  color: #ff416c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+<h2>Login</h2>
+
+<input id="email" placeholder="Email">
+<input id="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+</div>
+
+<script>
+async function login() {
+  const res = await fetch("/login", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({
+      email: email.value,
+      password: password.value
+    })
+  });
+
+  const data = await res.json();
+
+  if(data.status === "success"){
+    window.location = "dashboard.html";
+  } else {
+    alert("Invalid Login");
+  }
+}
+</script>
+
+</body>
+</html>
